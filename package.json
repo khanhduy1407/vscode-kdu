@@ -1,0 +1,40 @@
+{
+	"name": "kdu",
+	"description": "Syntax Highlight for Kdu.js",
+	"version": "0.1.5",
+	"author": "NKDuy",
+	"publisher": "nkduy",
+	"icon": "images/kdujs-logo.png",
+	"keywords": [
+		"kdu",
+		"kdujs"
+	],
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/khanhduy1407/vscode-kdu.git"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "kdu",
+			"aliases": ["Kdu.js", "kdu"],
+			"extensions": [".kdu"],
+			"configuration": "./kdu.configuration.json"
+		}],
+		"grammars": [{
+			"language": "kdu",
+			"scopeName": "text.html.kdu",
+			"path": "./syntaxes/kdu.tmLanguage.json"
+		}],
+		"snippets": [{
+			"language": "kdu",
+			"path": "./snippets/snippets.json"
+		}]
+	},
+	"license": "MIT"
+}
